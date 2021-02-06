@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>ARC messages dialog</title>
+  <style>
+  .centered[role="main"] {
+    max-width: 1400px;
+  }
+
+  body.styled {
+    --arc-font-code-family: 'Roboto Mono', 'Consolas', 'Menlo', monospace;
+    --anypoint-dropdown-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    --primary-background-color: #fff;
+    --primary-text-color: #000;
+    --primary-secondary-color: #757575;
+    --link-color: #1565c0;
+  }
+
+  body.demo.styled.dark header {
+    background-color: #424242;
+  }
+
+  body.styled.demo.dark {
+    --primary-color: #ffcc80;
+    --accent-color: #E040FB;
+    --primary-text-color: #fff;
+    --secondary-text-color: rgba(255, 255, 255, 0.84);
+    --primary-background-color: #212121;
+    --secondary-background-color: #313131;
+    --error-color: #ff9090;
+    --link-color: #8bc34a;
+    --input-background-color: var(--primary-background-color);
+    --active-background-color: #616161;
+
+    --anypoint-dropdown-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    --anypoint-autocomplete-dropdown-shadow: var(--anypoint-dropdown-shadow);
+  
+
+    background-color: var(--secondary-background-color);
+    color: #fff;
+
+    --anypoint-dropdown-menu-background-color: #494949;
+    --anypoint-dropdown-menu-label-background-color: var(--primary-background-color);
+    --anypoint-listbox-background-color: #494949;
+    --anypoint-dropdown-menu-focus-background-color: #616161;
+    --anypoint-dropdown-menu-label-color: #fff;
+    --anypoint-dropdown-menu-info-message-color: #fff;
+    --anypoint-item-hover-background-color: #616161;
+    --anypoint-item-focused-background-color: #212121;
+    --anypoint-autocomplete-background-color: #494949;
+    --anypoint-icon-button-emphasis-low-color: #fff;
+
+    --anypoint-button-emphasis-low-hover-background-color: #616161;
+    --anypoint-button-emphasis-low-focus-background-color: var(--anypoint-button-emphasis-low-hover-background-color);
+    --anypoint-button-emphasis-low-focus-color: var(--primary-color);
+
+    --anypoint-menu-button-border-radius: 12px;
+
+    --anypoint-listbox-padding: 8px 0;
+    --anypoint-item-padding: 0 16px;
+
+    --anypoint-dialog-title-color: var(--primary-text-color);
+    --anypoint-dialog-content-color: var(--secondary-text-color);
+  }
+
+  body.demo.styled.dark header {
+    background-color: var(--primary-background-color);
+  }
+  </style>
+</head>
+
+<body class="demo">
+  <div id="demo"></div>
+  <script type="module" src="dialog.js"></script>
+</body>
+
+</html>
